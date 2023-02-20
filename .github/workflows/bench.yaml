@@ -23,4 +23,4 @@ jobs:
       - name: Run bench
         env:
           HOST_ETC: ${{ github.workspace }}/fixtures/rhel
-        run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel 3.10.0-1160.2.1.el7.x86_64 --family rhel --platform rhel --distribution rhel
+        run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel 3.10.0-1160.2.1.el7.x86_64 --family rhel --platform rhel --release rhel
