@@ -55,4 +55,4 @@ jobs:
 
       - name: Run output table builder
         run: |
-          python3 output.py ./outputs
+          python3 output.py ./outputs >> $GITHUB_STEP_SUMMARY
