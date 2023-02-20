@@ -39,7 +39,7 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: output=${{ matrix.slug }}
+          name: output-${{ matrix.slug }}
           path: ./output.txt
 
   result:
@@ -47,7 +47,12 @@ jobs:
     runs-on: ubuntu-22.04
     needs: bench
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/checkout@v3
 
-      - name: Display structure of downloaded files
-        run: ls -R
+      - uses: actions/download-artifact@v3
+        with:
+          path: outputs
+
+      - name: Run output table builder
+        run: |
+          python3 output.py ./outputs

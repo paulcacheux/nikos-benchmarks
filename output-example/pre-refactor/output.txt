@@ -1,0 +1,70 @@
+v1.10.0
+time="2023-02-20T20:46:49Z" level=info msg="OS family: rhel\n"
+time="2023-02-20T20:46:49Z" level=info msg="Distribution: centos\n"
+time="2023-02-20T20:46:49Z" level=info msg="Release: 7.8.2003\n"
+time="2023-02-20T20:46:49Z" level=info msg="Kernel: 3.10.0-1127.el7.x86_64\n"
+time="2023-02-20T20:46:49Z" level=info msg="Machine: x86_64\n"
+time="2023-02-20T20:46:49Z" level=info msg="Scanning repo files in '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-Base.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-CR.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-Debuginfo.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-Media.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-Sources.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-Vault.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-fasttrack.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Reading repo file '/home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/yum.repos.d/CentOS-x86_64-kernel.repo'"
+time="2023-02-20T20:46:49Z" level=info msg="Librepo version: 1.12.1 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.75.0 OpenSSL/1.1.1k zlib/1.2.11 zstd/1.5.2 nghttp2/1.43.0)"
+time="2023-02-20T20:46:49Z" level=info msg="Solv directory: /tmp/nikos-solv"
+time="2023-02-20T20:46:49Z" level=info msg="Trying with 'base' and 'updates' repositories"
+time="2023-02-20T20:46:49Z" level=info msg="Downloading: file:///home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7"
+time="2023-02-20T20:46:49Z" level=info msg="Downloading: http://mirrorlist.centos.org/?release=7&arch=x86_64&repo=os&infra=$infra"
+time="2023-02-20T20:46:50Z" level=info msg="Downloading: http://mirror.genesishosting.com/centos/7.9.2009/os/x86_64/repodata/repomd.xml"
+time="2023-02-20T20:46:50Z" level=info msg="Downloading: http://mirror.genesishosting.com/centos/7.9.2009/os/x86_64/repodata/cca56f3cffa18f1e52302dbfcf2f0250a94c8a37acd8347ed6317cb52c8369dc-c7-x86_64-comps.xml"
+time="2023-02-20T20:46:50Z" level=info msg="Downloading: http://mirror.genesishosting.com/centos/7.9.2009/os/x86_64/repodata/5319616dde574d636861a6e632939f617466a371e59b555cf816cf1f52f3e873-filelists.xml.gz"
+time="2023-02-20T20:46:50Z" level=info msg="Downloading: http://mirror.genesishosting.com/centos/7.9.2009/os/x86_64/repodata/2b479c0f3efa73f75b7fb76c82687744275fff78e4a138b5b3efba95f91e099e-primary.xml.gz"
+time="2023-02-20T20:46:53Z" level=info msg="Downloading: file:///home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7"
+time="2023-02-20T20:46:53Z" level=info msg="Downloading: http://mirrorlist.centos.org/?release=7&arch=x86_64&repo=updates&infra=$infra"
+time="2023-02-20T20:46:53Z" level=info msg="Downloading: http://mirrors.gigenet.com/centos/7.9.2009/updates/x86_64/repodata/repomd.xml"
+time="2023-02-20T20:46:54Z" level=info msg="Downloading: http://mirrors.gigenet.com/centos/7.9.2009/updates/x86_64/repodata/66f78a85f9f7dba9e8cfd75f8f34aa2d32b1af38796bb977564efa74781bc390-filelists.xml.gz"
+time="2023-02-20T20:46:54Z" level=info msg="Downloading: http://mirrors.gigenet.com/centos/7.9.2009/updates/x86_64/repodata/c131f8950978c7c2fe61265e1ae94f76f372da8699119fb2768d5099d5591b2f-primary.xml.gz"
+time="2023-02-20T20:47:00Z" level=info msg="Looking for package kernel-devel-3.10.0-1127.el7.x86_64"
+time="2023-02-20T20:47:00Z" level=info msg="Looking for package kernel-devel-3.10.0-1127.el7.x86_64*x86_64"
+time="2023-02-20T20:47:00Z" level=info msg="Looking for package kernel-devel-3.10.0-1127.el7.x86_64*noarch"
+time="2023-02-20T20:47:00Z" level=info msg="Trying with Vault repositories for 7.8.2003"
+time="2023-02-20T20:47:00Z" level=info msg="Downloading: file:////home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7"
+time="2023-02-20T20:47:00Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/updates/x86_64/repodata/repomd.xml"
+time="2023-02-20T20:47:01Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/updates/x86_64/repodata/4c2d91df66c87a599e544cf53a3da280fdf59386e4ddf9027495602fa22ca508-filelists.xml.gz"
+time="2023-02-20T20:47:01Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/updates/x86_64/repodata/ff191ab1ffe6dfebfedb2aa7f6b81635f5c0877a8a229062ae65283e7939ea4c-primary.xml.gz"
+time="2023-02-20T20:47:02Z" level=info msg="Downloading: file:////home/runner/work/nikos-benchmarks/nikos-benchmarks/fixtures/centos/7/etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7"
+time="2023-02-20T20:47:02Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/os/x86_64/repodata/repomd.xml"
+time="2023-02-20T20:47:02Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/os/x86_64/repodata/cca56f3cffa18f1e52302dbfcf2f0250a94c8a37acd8347ed6317cb52c8369dc-c7-x86_64-comps.xml"
+time="2023-02-20T20:47:02Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/os/x86_64/repodata/d32de2aea425b1c121b5aa9040f15c3d30c9b1c10b0dcbfaa3407c869e3e69e6-filelists.xml.gz"
+time="2023-02-20T20:47:02Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/os/x86_64/repodata/513e52a5206d5c03f193f7e35a5634fa9689415961cde425624fc891a62f55a8-primary.xml.gz"
+time="2023-02-20T20:47:05Z" level=info msg="Looking for package kernel-devel-3.10.0-1127.el7.x86_64"
+time="2023-02-20T20:47:05Z" level=info msg="Found package kernel-devel-3.10.0-1127.el7.x86_64"
+error: cannot open Packages database in /opt/nikos/embedded/opt/nikos/embedded/var/lib/rpm
+time="2023-02-20T20:47:05Z" level=info msg="Downloading package"
+time="2023-02-20T20:47:05Z" level=info msg="Downloading: http://vault.centos.org/7.8.2003/os/x86_64/Packages/kernel-devel-3.10.0-1127.el7.x86_64.rpm"
+	Command being timed: "/opt/nikos/bin/nikos download --kernel 3.10.0-1127.el7.x86_64 --family rhel --platform centos"
+	User time (seconds): 13.78
+	System time (seconds): 0.95
+	Percent of CPU this job got: 81%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:18.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 207116
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 81029
+	Voluntary context switches: 7380
+	Involuntary context switches: 542
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 371856
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
