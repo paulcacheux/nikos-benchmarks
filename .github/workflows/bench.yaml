@@ -35,5 +35,5 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: output-${{ matrix.ref }}
+          name: output
           path: ./output.txt
