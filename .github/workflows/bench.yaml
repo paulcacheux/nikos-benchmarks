@@ -25,7 +25,15 @@ jobs:
       - name: Build nikos
         run: bash .ci_build/build_install_nikos.sh . .ci_build/nikos-libs.tar.gz
 
+      - name: Prepare output
+        run: echo "${{ matrix.ref }}" > ./output.txt
+
       - name: Run bench
         env:
           HOST_ETC: ${{ github.workspace }}/fixtures/centos/7/etc/
-        run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel 3.10.0-1127.el7.x86_64 --family rhel --platform centos
+        run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel 3.10.0-1127.el7.x86_64 --family rhel --platform centos 2>&1 | tee -a ./output.txt
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output-${{ matrix.ref }}
+          path: ./output.txt
