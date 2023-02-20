@@ -21,4 +21,5 @@ jobs:
         run: bash .ci_build/build_install_nikos.sh .
 
       - name: Run bench
-        run: /usr/bin/time -v /opt/nikos/bin/nikos
+        env: HOST_ETC=${{ github.workspace }}/fixtures/rhel
+        run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel 3.10.0-1160.2.1.el7.x86_64 --family rhel
