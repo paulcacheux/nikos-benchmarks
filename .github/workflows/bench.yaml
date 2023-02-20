@@ -23,4 +23,4 @@ jobs:
       - name: Run bench
         env:
           HOST_ETC: ${{ github.workspace }}/fixtures/centos/7/etc/
-        run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel 3.10.0-1160.el7.x86_64 --family rhel --platform centos
+        run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel kernel-devel-3.10.0-1127.el7.x86_64 --family rhel --platform centos
