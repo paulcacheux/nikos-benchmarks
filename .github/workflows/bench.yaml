@@ -9,7 +9,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ref: [v1.10.0, paulcacheux/fix-oracle]
+        include:
+          - ref: v1.10.0
+            slug: pre-refactor
+          - ref: paulcacheux/fix-oracle
+            slug: after-refactor
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
@@ -35,5 +39,14 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: output
+          name: output=${{ matrix.slug }}
           path: ./output.txt
+
+  result:
+    name: Create result output
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/download-artifact@v3
+
+      - name: Display structure of downloaded files
+        run: ls -R
