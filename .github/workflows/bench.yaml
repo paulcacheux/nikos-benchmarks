@@ -6,13 +6,16 @@ jobs:
   bench:
     name: Build nikos
     runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        ref: [v1.10.0, paulcacheux/fix-oracle]
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
         with:
           repository: DataDog/nikos
-          # ref: paulcacheux/fix-oracle
-          ref: v1.10.0
+          ref: ${{ matrix.ref }}
 
       - name: Setup go
         uses: actions/setup-go@v3
