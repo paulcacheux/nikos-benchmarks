@@ -4,7 +4,7 @@ on:
 
 jobs:
   bench:
-    name: Build nikos
+    name: Build and bench nikos
     runs-on: ubuntu-20.04
     strategy:
       fail-fast: false
@@ -45,6 +45,7 @@ jobs:
   result:
     name: Create result output
     runs-on: ubuntu-22.04
+    needs: bench
     steps:
       - uses: actions/download-artifact@v3
 
