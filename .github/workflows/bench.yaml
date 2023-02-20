@@ -20,7 +20,10 @@ jobs:
       - name: Build nikos
         run: bash .ci_build/build_install_nikos.sh .
 
+      - name: Fix redhat-release
+        run: echo "CentOS Linux release 7.9.2009 (AltArch)" >> ./fixtures/centos/7/etc/redhat-release
+
       - name: Run bench
         env:
-          HOST_ETC: ${{ github.workspace }}/fixtures/rhel
+          HOST_ETC: ${{ github.workspace }}/fixtures/centos/7/etc/
         run: /usr/bin/time -v /opt/nikos/bin/nikos download --kernel 3.10.0-1160.2.1.el7.x86_64 --family rhel --platform centos
