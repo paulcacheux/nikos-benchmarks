@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: DataDog/nikos
-          ref: paulcacheux/fix-oracle
+          ref: paulcacheux/debug-bench
 
       - name: Setup go
         uses: actions/setup-go@v3
