@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  build:
+  bench:
     name: Build nikos
     runs-on: ubuntu-22.04
     steps:
@@ -20,5 +20,5 @@ jobs:
       - name: Build nikos
         run: bash .ci_build/build_install_nikos.sh .
 
-      - name: Verify build
-        run: /opt/nikos/bin/nikos
+      - name: Run bench
+        run: /usr/bin/time -v /opt/nikos/bin/nikos
