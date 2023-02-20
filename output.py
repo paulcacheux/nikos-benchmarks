@@ -28,7 +28,7 @@ for name in root.glob("**/output.txt"):
             if not inserting:
                 continue
 
-            [before, after] = line.rsplit(":", maxsplit=1)
+            [before, after] = line.rsplit(": ", maxsplit=1)
             entry.stats.append((before, after))
     entries.append(entry)
 
